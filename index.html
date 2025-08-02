@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goda Shop Double Diamond Topup</title>
+    <link rel="icon" href="/image/download (2).png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Free Fire Double Diamond Top-up</h1>
+            <p class="tagline"><img src="image/download.png" width="20" height="20" alt="icon"> FREE FIRE  <img src="image/close.png" width="12" height="12" alt="icon">
+                  Goda Shop <img src="image/download (2).png" width="16" height="16" alt="icon"></p>
+        </header>
+
+         <div class="banner-image">
+        <img src="image/Free Fire lança parceria inédita com Naruto Shippuden.jpg" alt="Free Fire Diamonds Banner">
+         </div>
+
+        <div class="description">
+            <h2>Free Fire Diamond Top-Up</h2>
+            <p>Free Fire Diamond top up at this website is easy as counting 1, 2, 3! Just enter your FF user ID, select the amount of Diamonds you wish to purchase, complete the payment and the Diamonds will be added to your Free Fire account.</p>
+            <p>Pay conveniently using Net Banking. There's no credit card, registration, or log-in required!</p>
+            
+            <div class="contact">
+                <h3>Contact Us:</h3>
+                <p>godashopint@gmail.com</p>
+                <p>+91904307265</p>
+            </div>
+            
+            <div class="terms">
+                <p>You agree to share information entered on this page with online store (owner of this page) and Godapay, adhering to applicable laws.</p>
+            </div>
+        </div>
+
+        <div class="offer-container" id="offerContainer">
+            <!-- Offers will be loaded dynamically by JavaScript -->
+        </div>
+
+        <div class="payment-form">
+            <h2>Payment Details</h2>
+            <div class="form-group">
+                <label for="playerId">Player ID</label>
+                <input type="text" id="playerId" placeholder="Enter your Free Fire ID" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+             <!-- <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" id="playerId" placeholder="Enter your password" required>
+            </div> -->
+            
+            <div class="selected-offer">
+                <h3>Selected Offer:</h3>
+                <p id="selectedOfferText">No offer selected</p>
+                <p id="selectedPrice">₹ 0.00</p>
+            </div>
+            
+            <!-- <button id="payButton" class="pay-button" disabled>Pay ₹ 0.00</button> -->
+
+            <button id="payButton" class="pay-button" onclick="redirectToPayment()">Proceed to Payment</button>
+            
+            <div class="payment-methods">
+                <img src="image/OIP (1).webp" alt="UPI">
+                <img src="image/OIP.webp" alt="VISA">
+                <img src="image/OIP.jpg" alt="RuPay">
+                <img src="image/OIP (1).jpg" alt="Razorpay">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
